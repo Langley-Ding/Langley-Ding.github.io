@@ -159,7 +159,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/09/09/learning%20React/">Learning React</a>
+      <a class="article-title" href="/2020/09/09/learning%20React/">Learning React-Virtual DOM and Diff</a>
     </h1>
   
 
@@ -172,7 +172,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="Virtual-DOM-and-Diff"><a href="#Virtual-DOM-and-Diff" class="headerlink" title="Virtual DOM and Diff"></a>Virtual DOM and Diff</h2><h3 id="虚拟DOM是什么？"><a href="#虚拟DOM是什么？" class="headerlink" title="虚拟DOM是什么？"></a>虚拟DOM是什么？</h3><p>开发框架的程序员，手动用JS对象来模拟DOM元素及其嵌套关系；</p>
+<h3 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h3><p>实现页面的按需渲染，按需更新，即减少DOM操作，提升性能，实现DOM高效更新；</p>
+<h4 id="实际DOM展示"><a href="#实际DOM展示" class="headerlink" title="实际DOM展示"></a>实际DOM展示</h4><p>*&lt;’div id=’myDiv’ title = ‘to be honest’&gt;I’m smart &lt;/‘div&gt;*</p>
+<h4 id="虚拟DOM展示"><a href="#虚拟DOM展示" class="headerlink" title="虚拟DOM展示"></a>虚拟DOM展示</h4><p>var div = {<br>    tagName: ‘div’,<br>    attrs:{<br>        id:’myDiv’,<br>        title:’to be honest’<br>    }<br>    children: [<br>        I’m smart<br>    ]<br>}</p>
+
       
 
       
@@ -180,6 +184,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">React</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -237,8 +252,8 @@
         <h2 id="40天后回归"><a href="#40天后回归" class="headerlink" title="40天后回归"></a>40天后回归</h2><h3 id="使用Visual-Studio-Code打开Blog文件"><a href="#使用Visual-Studio-Code打开Blog文件" class="headerlink" title="使用Visual Studio Code打开Blog文件"></a>使用Visual Studio Code打开Blog文件</h3><h3 id="使用“hexo-s”时出现报错"><a href="#使用“hexo-s”时出现报错" class="headerlink" title="使用“hexo s”时出现报错"></a>使用“hexo s”时出现报错</h3><p>Error: EACCES: permission denied, open ‘/Users/ding/Blog/db.json’<br>解决办法：在hexo s 前加sudo;</p>
 <h3 id="使用”hexo-n”又出现权限问题报错"><a href="#使用”hexo-n”又出现权限问题报错" class="headerlink" title="使用”hexo n”又出现权限问题报错"></a>使用”hexo n”又出现权限问题报错</h3><p>解决办法也是在前面加sudo;</p>
 <h3 id="保存Visual-Studio-Code-时又要以sudo形式保存"><a href="#保存Visual-Studio-Code-时又要以sudo形式保存" class="headerlink" title="保存Visual Studio Code 时又要以sudo形式保存"></a>保存Visual Studio Code 时又要以sudo形式保存</h3><p>Retry as sudo</p>
-<h3 id="本地实时预览"><a href="#本地实时预览" class="headerlink" title="本地实时预览"></a>本地实时预览</h3><p>待学习</p>
-<h3 id="如何避免每次使用hexo命令时输入前缀sudo"><a href="#如何避免每次使用hexo命令时输入前缀sudo" class="headerlink" title="如何避免每次使用hexo命令时输入前缀sudo"></a>如何避免每次使用hexo命令时输入前缀sudo</h3><p>待学习</p>
+<h3 id="本地实时预览"><a href="#本地实时预览" class="headerlink" title="本地实时预览"></a>本地实时预览</h3><p>保存后点击 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> </p>
+<h3 id="如何避免每次使用hexo命令时输入前缀sudo"><a href="#如何避免每次使用hexo命令时输入前缀sudo" class="headerlink" title="如何避免每次使用hexo命令时输入前缀sudo"></a>如何避免每次使用hexo命令时输入前缀sudo</h3><p>_post文件夹，右键 Get info, 在最底下有sharing &amp; Permission；<br>解锁🔓后，按加号➕，对应添加自己的用户名，如我的是LLD，<br>最后在’Read only’ 那里点击一下，改成 ‘Read &amp; Write’<br>（已有文件的权限仍未变，仍需输入密码，在这操作之后创建的文件.md不再需要密码）</p>
 <h3 id="插入图床"><a href="#插入图床" class="headerlink" title="插入图床"></a>插入图床</h3><p>使用Markdown语法，!+[图片信息]+(外部链接)的方法。</p>
 <h3 id="可以使用div标签使文字居中"><a href="#可以使用div标签使文字居中" class="headerlink" title="可以使用div标签使文字居中"></a>可以使用div标签使文字居中</h3><div align="center">this is a test sentence,set align center</div>
 
@@ -248,6 +263,7 @@
 
 <h3 id="葫芦娃-水娃"><a href="#葫芦娃-水娃" class="headerlink" title="葫芦娃 水娃"></a>葫芦娃 水娃</h3><p><img src="https://ww2.sinaimg.cn/bmiddle/6bb400dbgy1ggs0ky12paj20hs0b4jrw.jpg" alt="water kid"></p>
 <h3 id="使用标签可以放入图片，并改变图片大小"><a href="#使用标签可以放入图片，并改变图片大小" class="headerlink" title="使用标签可以放入图片，并改变图片大小"></a>使用<img>标签可以放入图片，并改变图片大小</h3><p><img src="https://ww2.sinaimg.cn/bmiddle/6bb400dbgy1ggs0ky12paj20hs0b4jrw.jpg" width="300px" height="200px"></img></p>
+<h3 id="小问题，未成功部署到远端"><a href="#小问题，未成功部署到远端" class="headerlink" title="小问题，未成功部署到远端"></a>小问题，未成功部署到远端</h3><p>使用sudo hexo clean（第二次部署时未清除缓存，直接用sudo hexo d,未推送到GitHub）<br>再次使用sudo hexo d</p>
 
       
 
@@ -256,6 +272,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">sudo</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -599,6 +626,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">sudo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">React</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>

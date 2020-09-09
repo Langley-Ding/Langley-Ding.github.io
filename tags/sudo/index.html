@@ -6,19 +6,14 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Learning React-Virtual DOM and Diff | Langley&#39;s Blog</title>
+  <title>Tag: sudo | Langley&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Virtual DOM and Diff虚拟DOM是什么？开发框架的程序员，手动用JS对象来模拟DOM元素及其嵌套关系； 目的实现页面的按需渲染，按需更新，即减少DOM操作，提升性能，实现DOM高效更新； 实际DOM展示*&lt;’div id&#x3D;’myDiv’ title &#x3D; ‘to be honest’&gt;I’m smart &lt;&#x2F;‘div&gt;* 虚拟DOM展示var div &#x3D; {">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Learning React-Virtual DOM and Diff">
-<meta property="og:url" content="http://yoursite.com/2020/09/09/learning%20React/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Langley&#39;s Blog">
+<meta property="og:url" content="http://yoursite.com/tags/sudo/index.html">
 <meta property="og:site_name" content="Langley&#39;s Blog">
-<meta property="og:description" content="Virtual DOM and Diff虚拟DOM是什么？开发框架的程序员，手动用JS对象来模拟DOM元素及其嵌套关系； 目的实现页面的按需渲染，按需更新，即减少DOM操作，提升性能，实现DOM高效更新； 实际DOM展示*&lt;’div id&#x3D;’myDiv’ title &#x3D; ‘to be honest’&gt;I’m smart &lt;&#x2F;‘div&gt;* 虚拟DOM展示var div &#x3D; {">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-09-09T14:38:47.000Z">
-<meta property="article:modified_time" content="2020-09-09T14:59:56.269Z">
 <meta property="article:author" content="Ding LiangLiang">
-<meta property="article:tag" content="React">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Langley&#39;s Blog" type="application/atom+xml">
@@ -155,170 +150,60 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-learning React" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      Learning React-Virtual DOM and Diff
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2020" class="archive-year">2020</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2020/08/29/Come-back-after-40-days/" class="archive-article-date">
+  	<time datetime="2020-08-29T02:25:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-29</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2020/08/29/Come-back-after-40-days/">Come back after 40 days</a>
     </h1>
   
 
-        
-        <a href="/2020/09/09/learning%20React/" class="archive-article-date">
-  	<time datetime="2020-09-09T14:38:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-09</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Virtual-DOM-and-Diff"><a href="#Virtual-DOM-and-Diff" class="headerlink" title="Virtual DOM and Diff"></a>Virtual DOM and Diff</h2><h3 id="虚拟DOM是什么？"><a href="#虚拟DOM是什么？" class="headerlink" title="虚拟DOM是什么？"></a>虚拟DOM是什么？</h3><p>开发框架的程序员，手动用JS对象来模拟DOM元素及其嵌套关系；</p>
-<h3 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h3><p>实现页面的按需渲染，按需更新，即减少DOM操作，提升性能，实现DOM高效更新；</p>
-<h4 id="实际DOM展示"><a href="#实际DOM展示" class="headerlink" title="实际DOM展示"></a>实际DOM展示</h4><p>*&lt;’div id=’myDiv’ title = ‘to be honest’&gt;I’m smart &lt;/‘div&gt;*</p>
-<h4 id="虚拟DOM展示"><a href="#虚拟DOM展示" class="headerlink" title="虚拟DOM展示"></a>虚拟DOM展示</h4><p>var div = {<br>    tagName: ‘div’,<br>    attrs:{<br>        id:’myDiv’,<br>        title:’to be honest’<br>    }<br>    children: [<br>        I’m smart<br>    ]<br>}</p>
-
-      
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">React</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">sudo</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/09/09/learning%20React/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
   
   
-    <a href="/2020/08/29/Come-back-after-40-days/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Come back after 40 days</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
+    
 
 
           </div>
@@ -341,9 +226,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
